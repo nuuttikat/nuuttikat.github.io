@@ -252,10 +252,10 @@ a { color: inherit; }
 .idx { font-family: var(--display); font-size: 22px; opacity: .35; }
 
 /* ---------- Work / projects ---------- */
-.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 32px); }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 32px); }
 .card { display: flex; flex-direction: column; gap: 14px; }
 .card-art {
-  position: relative; aspect-ratio: 4 / 3; overflow: hidden;
+  position: relative; aspect-ratio: 16 / 7; overflow: hidden;
   background: #161616; border-bottom: 4px solid var(--red);
   display: flex; align-items: flex-end; justify-content: flex-end; padding: 8px 14px;
 }
@@ -270,6 +270,12 @@ a { color: inherit; }
   position: relative; font-family: var(--display); font-size: clamp(90px, 10vw, 150px); line-height: .85;
   color: transparent; -webkit-text-stroke: 1.5px var(--paper); opacity: .8;
 }
+.card-art em {
+  position: absolute; left: 14px; top: 14px; z-index: 1;
+  font-style: normal; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  background: var(--red); color: #fff; padding: 4px 10px;
+}
+.muted-link { border-bottom-color: #555; color: var(--grey); }
 .card h3 { margin: 6px 0 0; font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: 32px; line-height: 1; }
 .card p { margin: 0; color: #b9b6b2; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
@@ -345,7 +351,6 @@ a { color: inherit; }
    ========================================================== */
 @media (max-width: 1000px) {
   .site-header nav { gap: 22px; }
-  .cards { grid-template-columns: 1fr 1fr; }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
