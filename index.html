@@ -3,137 +3,220 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nuutti</title>
+  <title>Nuutti · Portfolio</title>
   <meta name="description" content="Portfolio of Nuutti: experience, projects and skills.">
+  <meta name="theme-color" content="#111111">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231f5c4a'/><text x='16' y='22' font-family='Georgia,serif' font-size='17' fill='white' text-anchor='middle'>N</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23111'/><text x='8' y='25' font-family='Impact,sans-serif' font-size='22' fill='%23efedea'>N</text><text x='21' y='17' font-family='Impact,sans-serif' font-size='16' fill='%23e10600'>*</text></svg>">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <!--
-    Content marked with class="ph" is PLACEHOLDER text.
-    Replace it with real details and remove the class (and the "Placeholder" note) when done.
+    Content marked with class="ph" is PLACEHOLDER text (dashed underline).
+    Replace it with real details and remove the class when done.
+    The two photos in assets/ are stand-ins (Unsplash License, Florian Krumm).
   -->
+  <a class="skip" href="#about">Skip to content</a>
+
+  <div class="topbar">
+    <span>Portfolio 2026 · Based in Finland</span>
+    <span class="avail"><span class="dot" aria-hidden="true"></span>Available for work</span>
+  </div>
+
   <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#top">Nuutti</a>
-      <nav aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <a class="logo" href="#top" aria-label="Nuutti, back to top">N<span>*</span></a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+    </nav>
+    <a class="btn btn-red" href="#contact">Let's talk
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
   </header>
 
   <main id="top">
-    <section class="hero wrap">
-      <p class="eyebrow ph">Your role or field · Finland</p>
-      <h1>Nuutti</h1>
-      <p class="lead ph">A one-sentence summary of what you do and what you care about. For example: "I build practical software and enjoy turning messy problems into simple tools."</p>
-      <div class="hero-actions">
-        <a class="btn" href="#contact">Get in touch</a>
-        <a class="btn btn-ghost" href="https://github.com/nuuttikat">GitHub</a>
-      </div>
-      <p class="ph-note">Text with a dashed underline is placeholder content.</p>
-    </section>
-
-    <section id="about" class="section wrap">
-      <h2><span class="num">01</span> About</h2>
-      <div class="prose">
-        <p class="ph">Write two or three short paragraphs about yourself here: your background, what you're working on now, and what kind of work or opportunities you're looking for.</p>
-        <p class="ph">A personal detail helps too, such as a hobby, where you're based, or what got you into your field.</p>
-      </div>
-    </section>
-
-    <section id="experience" class="section wrap">
-      <h2><span class="num">02</span> Experience</h2>
-      <ol class="timeline">
-        <li>
-          <div class="when ph">2024 – Present</div>
-          <div class="what">
-            <h3 class="ph">Job title · Company name</h3>
-            <p class="ph">What you do there and one concrete result you're proud of.</p>
-          </div>
-        </li>
-        <li>
-          <div class="when ph">2022 – 2024</div>
-          <div class="what">
-            <h3 class="ph">Job title · Company name</h3>
-            <p class="ph">Main responsibilities and a notable achievement.</p>
-          </div>
-        </li>
-        <li>
-          <div class="when ph">2018 – 2022</div>
-          <div class="what">
-            <h3 class="ph">Degree · School or university</h3>
-            <p class="ph">Field of study, thesis topic, or anything worth highlighting.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <section id="projects" class="section wrap">
-      <h2><span class="num">03</span> Projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3 class="ph">Project one</h3>
-          <p class="ph">What it is, the problem it solves, and your part in it.</p>
-          <ul class="tags"><li class="ph">Tool</li><li class="ph">Tool</li></ul>
-          <a class="card-link ph" href="#">View project →</a>
-        </article>
-        <article class="card">
-          <h3 class="ph">Project two</h3>
-          <p class="ph">A short description and what you learned building it.</p>
-          <ul class="tags"><li class="ph">Tool</li><li class="ph">Tool</li></ul>
-          <a class="card-link ph" href="#">View project →</a>
-        </article>
-        <article class="card">
-          <h3 class="ph">Project three</h3>
-          <p class="ph">Personal, school or work project, anything that shows how you work.</p>
-          <ul class="tags"><li class="ph">Tool</li><li class="ph">Tool</li></ul>
-          <a class="card-link ph" href="#">View project →</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section wrap">
-      <h2><span class="num">04</span> Skills</h2>
-      <div class="skills">
-        <div>
-          <h3>Technical</h3>
-          <ul class="chips"><li class="ph">Skill</li><li class="ph">Skill</li><li class="ph">Skill</li><li class="ph">Skill</li></ul>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Intro">
+      <div class="stage">
+        <div class="red-block" aria-hidden="true"></div>
+        <img class="ghost" src="assets/profile-side.webp" alt="" aria-hidden="true" width="520" height="780">
+        <h1 class="name" aria-label="Nuutti">
+          <span aria-hidden="true" style="--d:.2s">N</span><span aria-hidden="true" style="--d:.27s">U</span><span aria-hidden="true" style="--d:.34s">U</span><span aria-hidden="true" style="--d:.41s">T</span><span aria-hidden="true" style="--d:.48s">T</span><span aria-hidden="true" style="--d:.55s">I</span>
+        </h1>
+        <span class="star" aria-hidden="true">*</span>
+        <div class="smoke" aria-hidden="true"></div>
+        <img class="front" src="assets/profile-front.webp" alt="Portrait (stand-in stock photo)" width="520" height="780">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 132 132">
+            <defs><path id="circ" d="M66,66 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs>
+            <text><textPath href="#circ">AVAILABLE • FOR WORK • 2026 •</textPath></text>
+          </svg>
+          <span></span>
         </div>
-        <div>
-          <h3>Tools</h3>
-          <ul class="chips"><li class="ph">Tool</li><li class="ph">Tool</li><li class="ph">Tool</li></ul>
-        </div>
-        <div>
-          <h3>Languages</h3>
-          <ul class="chips"><li>Finnish</li><li class="ph">English</li></ul>
+      </div>
+
+      <div class="tagline">
+        <p class="ph">[I build things.]<br>[I solve problems.]<br>[I keep learning.]</p>
+        <span class="bar" aria-hidden="true"></span>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn btn-dark" href="#work">View my work</a>
+        <a class="link-line ph" href="#contact">Download CV ↓</a>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div style="--d:1.5s"><b class="ph">[X]+</b><span>Years of<br>experience</span></div>
+      <div style="--d:1.6s"><b class="ph">[X]+</b><span>Projects<br>completed</span></div>
+      <div style="--d:1.7s"><b class="ph">[X]</b><span>Tools &amp;<br>technologies</span></div>
+      <div style="--d:1.8s"><b class="ph">[X]</b><span>Happy<br>clients</span></div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="sec dark" data-ghost="About">
+      <div class="smoke-bg" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="sec-head reveal"><span class="sec-num">01</span><h2>About</h2><span class="sec-rule"></span></div>
+        <div class="about-grid">
+          <p class="statement reveal"><span class="ph">A short, bold line about who you are</span><span class="red">*</span></p>
+          <div class="prose reveal">
+            <p class="ph">Write two or three short paragraphs about yourself here: your background, what you're working on now, and what kind of work or opportunities you're looking for.</p>
+            <p class="ph">A personal detail helps too, such as a hobby, where you're based, or what got you into your field.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section wrap contact">
-      <h2><span class="num">05</span> Contact</h2>
-      <p class="lead">Want to work together or just say hi? Reach out.</p>
-      <ul class="contact-list">
-        <li><span>Email</span><a class="ph" href="mailto:you@example.com">you@example.com</a></li>
-        <li><span>GitHub</span><a href="https://github.com/nuuttikat">github.com/nuuttikat</a></li>
-        <li><span>LinkedIn</span><a class="ph" href="#">Add your LinkedIn when ready</a></li>
-      </ul>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Build</span><i>*</i><span>Solve</span><i>*</i><span>Learn</span><i>*</i><span>Repeat</span><i>*</i>
+        <span>Build</span><i>*</i><span>Solve</span><i>*</i><span>Learn</span><i>*</i><span>Repeat</span><i>*</i>
+      </div>
+    </div>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="sec light" data-ghost="Career">
+      <div class="wrap">
+        <div class="sec-head reveal"><span class="sec-num">02</span><h2>Experience</h2><span class="sec-rule"></span></div>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="when ph">2024 – Now</span>
+            <div class="what">
+              <h3 class="ph">Job title · Company</h3>
+              <p class="ph">What you do there and one concrete result you're proud of.</p>
+            </div>
+            <span class="idx" aria-hidden="true">01</span>
+          </li>
+          <li class="reveal">
+            <span class="when ph">2022 – 2024</span>
+            <div class="what">
+              <h3 class="ph">Job title · Company</h3>
+              <p class="ph">Main responsibilities and a notable achievement.</p>
+            </div>
+            <span class="idx" aria-hidden="true">02</span>
+          </li>
+          <li class="reveal">
+            <span class="when ph">2018 – 2022</span>
+            <div class="what">
+              <h3 class="ph">Degree · School</h3>
+              <p class="ph">Field of study, thesis topic, or anything worth highlighting.</p>
+            </div>
+            <span class="idx" aria-hidden="true">03</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WORK / PROJECTS ============ -->
+    <section id="work" class="sec dark" data-ghost="Work">
+      <div class="smoke-bg right" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="sec-head reveal"><span class="sec-num">03</span><h2>Selected work</h2><span class="sec-rule"></span></div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-art" aria-hidden="true"><span>01</span></div>
+            <h3 class="ph">Project one</h3>
+            <p class="ph">What it is, the problem it solves, and your part in it.</p>
+            <ul class="tags"><li class="ph">Tool</li><li class="ph">Tool</li></ul>
+            <a class="card-link ph" href="#">View project ↗</a>
+          </article>
+          <article class="card reveal">
+            <div class="card-art" aria-hidden="true"><span>02</span></div>
+            <h3 class="ph">Project two</h3>
+            <p class="ph">A short description and what you learned building it.</p>
+            <ul class="tags"><li class="ph">Tool</li><li class="ph">Tool</li></ul>
+            <a class="card-link ph" href="#">View project ↗</a>
+          </article>
+          <article class="card reveal">
+            <div class="card-art" aria-hidden="true"><span>03</span></div>
+            <h3 class="ph">Project three</h3>
+            <p class="ph">Personal, school or work project, anything that shows how you work.</p>
+            <ul class="tags"><li class="ph">Tool</li><li class="ph">Tool</li></ul>
+            <a class="card-link ph" href="#">View project ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="sec light" data-ghost="Skills">
+      <div class="wrap">
+        <div class="sec-head reveal"><span class="sec-num">04</span><h2>Skills</h2><span class="sec-rule"></span></div>
+        <div class="skills">
+          <div class="reveal">
+            <h3>Technical</h3>
+            <ul class="chips"><li class="ph">Skill</li><li class="ph">Skill</li><li class="ph">Skill</li><li class="ph">Skill</li></ul>
+          </div>
+          <div class="reveal">
+            <h3>Tools</h3>
+            <ul class="chips"><li class="ph">Tool</li><li class="ph">Tool</li><li class="ph">Tool</li></ul>
+          </div>
+          <div class="reveal">
+            <h3>Languages</h3>
+            <ul class="chips"><li>Finnish</li><li class="ph">English</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="sec dark contact">
+      <div class="smoke-bg" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="sec-head reveal"><span class="sec-num">05</span><h2>Contact</h2><span class="sec-rule"></span></div>
+        <p class="big-cta reveal">Let's talk<span class="star-sm" aria-hidden="true">*</span></p>
+        <p class="lead reveal">Want to work together or just say hi? Reach out.</p>
+        <ul class="contact-list">
+          <li class="reveal"><span>Email</span><a class="ph" href="mailto:you@example.com">you@example.com</a></li>
+          <li class="reveal"><span>GitHub</span><a href="https://github.com/nuuttikat">github.com/nuuttikat</a></li>
+          <li class="reveal"><span>LinkedIn</span><a class="ph" href="#">Add LinkedIn when ready</a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer wrap">
-    <p>© <span id="year">2026</span> Nuutti</p>
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Nuutti<span class="red">*</span></p>
+    <p class="muted">Dashed underline = placeholder. Stand-in photos by <a href="https://unsplash.com/@floriankrumm">Florian Krumm</a> on Unsplash.</p>
     <a href="#top">Back to top ↑</a>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
 </body>
 </html>
