@@ -194,6 +194,7 @@ a { color: inherit; }
 }
 .stats > div { display: flex; align-items: center; gap: 14px; animation: fade .6s var(--d) both; }
 .stats b { font-family: var(--display); font-weight: 400; font-size: 40px; line-height: 1; color: var(--red); }
+.stats b.long { white-space: nowrap; font-size: clamp(24px, 2.6vw, 34px); }
 .stats span { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; line-height: 1.4; }
 
 /* ==========================================================
@@ -406,6 +407,8 @@ a { color: inherit; }
   html { scroll-padding-top: 110px; }
   .cards { grid-template-columns: 1fr; }
   .stats b { font-size: 32px; }
+  .stats b.long { font-size: 26px; }
+  .stats > div:has(.long) { flex-direction: column; align-items: flex-start; gap: 6px; }
   .contact-list li { grid-template-columns: 1fr; gap: 4px; }
   .timeline li:hover { padding-inline: 0; background: none; color: inherit; }
 }
