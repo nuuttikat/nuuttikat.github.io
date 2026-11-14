@@ -127,12 +127,15 @@ a { color: inherit; }
   animation: ghost 1.6s .2s var(--ease) both;
 }
 .name {
-  position: absolute; left: 0; right: 0; top: calc(118 * var(--u)); z-index: 1;
+  position: absolute; left: 0; right: 0; top: calc(124 * var(--u)); z-index: 1;
   margin: 0; display: flex; justify-content: center; overflow: hidden;
   font-family: var(--display); font-weight: 400;
-  font-size: calc(330 * var(--u)); line-height: .86; letter-spacing: -.01em;
+  font-size: calc(230 * var(--u)); line-height: .86; letter-spacing: -.01em;
 }
-.name span { display: inline-block; animation: rise .8s var(--d, .2s) var(--ease) both; }
+.name-in { display: flex; flex-direction: column; align-items: flex-start; }
+.name .last { display: flex; overflow: hidden; }
+.name .last span { display: inline-block; animation: rise .8s var(--d, .2s) var(--ease) both; }
+.name .first { display: block; overflow: hidden; font-size: .4em; line-height: .9; margin-top: .06em; letter-spacing: .02em; text-transform: uppercase; animation: fade .8s .75s both; }
 .star {
   position: absolute; left: calc(1130 * var(--u)); top: calc(96 * var(--u)); z-index: 3;
   font-family: var(--display); font-size: calc(120 * var(--u)); line-height: 1; color: var(--red);
