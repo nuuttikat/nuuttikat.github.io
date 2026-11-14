@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=10">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23111'/><text x='8' y='25' font-family='Impact,sans-serif' font-size='22' fill='%23efedea'>N</text><text x='21' y='17' font-family='Impact,sans-serif' font-size='16' fill='%23e10600'>*</text></svg>">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -146,33 +146,33 @@
       <div class="wrap">
         <div class="sec-head reveal"><span class="sec-num">03</span><h2>Selected work</h2><span class="sec-rule"></span></div>
         <div class="cards">
-          <article class="card reveal">
+          <article class="card reveal" data-case="case-automation">
             <div class="card-art shot"><img src="assets/automation.webp" style="object-position: center" alt="Illustration of AI, automation and data blocks connected in a workflow" width="1200" height="800" loading="lazy"><em>Client work · Confidential</em></div>
             <h3>Sales &amp; ad automation</h3>
             <p>Client project: a system that automates sales and advertising work with Playwright and AI agents. It finds businesses that need what the client offers, matches them to the right offer and drafts the outreach email automatically. I went from no AI agent experience to a working demo in one month. The client and project are confidential, so there's no code or link to share.</p>
             <ul class="tags"><li>Playwright</li><li>AI agents</li><li>Automation</li></ul>
-            <span class="card-link muted-link">Private project</span>
+            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-automation">Read the story →</button><span class="card-link muted-link">Private project</span></div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" data-case="case-kasaan">
             <div class="card-art shot"><img src="assets/kasaan-hero.webp" alt="The kasaan.fi home page: a dark hero with the headline 'Your part, 3D printed in as little as two hours' and an illustration of a part being printed" width="1200" height="603" loading="lazy"><em>Website + store</em></div>
             <h3>kasaan.fi</h3>
             <p>Website and online store for Kasaan Oy, a 3D printing and 3D scanning company in Ylivieska, in Finnish, English and Swedish. I built the store's back end myself: a PHP REST API on MySQL with orders, PDF invoices and credit notes, customer accounts with Google sign-in, and an admin panel with two-factor login.</p>
             <ul class="tags"><li>React</li><li>PHP</li><li>MySQL</li><li>Full-stack</li></ul>
-            <a class="card-link" href="https://kasaan.fi/">Visit kasaan.fi ↗</a>
+            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-kasaan">Read the story →</button><a class="card-link" href="https://kasaan.fi/">Visit kasaan.fi ↗</a></div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" data-case="case-pehutec">
             <div class="card-art shot"><img src="assets/pehutec-hero.webp" alt="The PehuTec home page: the headline 'Future Solutions, Implemented by Experts' over glowing 3D cubes" width="1200" height="512" loading="lazy"><em>Website</em></div>
             <h3>PehuTec Oy</h3>
             <p>Website for PehuTec, an Oulu engineering company that does software and electronics design.</p>
             <ul class="tags"><li>Web design</li><li>Front-end</li></ul>
-            <a class="card-link" href="https://www.pehutec.com/">Visit pehutec.com ↗</a>
+            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-pehutec">Read the story →</button><a class="card-link" href="https://www.pehutec.com/">Visit pehutec.com ↗</a></div>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" data-case="case-models">
             <div class="card-art" aria-hidden="true"><em>3D modelling</em><span>04</span></div>
             <h3>3D models for printing</h3>
             <p>I draw the 3D models behind Kasaan's printing business, turning ideas, sketches and customer requests into parts that are ready to print.</p>
             <ul class="tags"><li>3D modelling</li><li>3D printing</li><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li></ul>
-            <a class="card-link" href="https://kasaan.fi/">See Kasaan's printing ↗</a>
+            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-models">Read the story →</button><a class="card-link" href="https://kasaan.fi/">See Kasaan's printing ↗</a></div>
           </article>
         </div>
       </div>
@@ -262,6 +262,76 @@
     <a href="#top">Back to top ↑</a>
   </footer>
 
+
+  <dialog class="case" id="case-automation" aria-labelledby="case-automation-title">
+    <div class="case-in">
+      <header class="case-head">
+        <em class="case-label">Client work · Confidential</em>
+        <button class="case-close" type="button" aria-label="Close">×</button>
+      </header>
+      <h2 class="case-title" id="case-automation-title">Sales &amp; ad automation</h2>
+      <div class="case-art"><img src="assets/automation.webp" alt="Illustration of AI, automation and data blocks connected in a workflow" width="1200" height="800" loading="lazy" style="object-position: center"></div>
+      <ol class="case-steps">
+        <li><span class="case-num">01</span><h3>How it started</h3><p class="ph">How did this project start? Who needed it and what problem were they facing? (Keep the client anonymous.)</p></li>
+        <li><span class="case-num">02</span><h3>Imagine</h3><p class="ph">What did you picture it could become? What would the perfect version do for the client?</p></li>
+        <li><span class="case-num">03</span><h3>Structure &amp; build</h3><p>The system is written in TypeScript on Node.js, with Express serving a small web interface and API. Playwright drives a real browser to gather information from the web. A team of AI agents on the Claude and OpenAI APIs splits the work: one researches each business, one judges whether it needs what the client offers, and one writes the outreach email.</p><p>Jobs run in the background, data is stored in PostgreSQL (SQLite while developing), tests run on Vitest, and the whole thing ships as a Docker container.</p><ul class="tags"><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Playwright</li><li>Claude API</li><li>OpenAI API</li><li>PostgreSQL</li><li>Docker</li></ul></li>
+        <li><span class="case-num">04</span><h3>How it came out</h3><p>I had never built custom AI agents before. Within a month there was a working demo: it finds businesses with a real need, matches them to the right offer and has the email draft ready, all automatically.</p><p class="ph">Where is the project now? Add how the client uses it or what it has saved them.</p></li>
+      </ol>
+      <footer class="case-foot"><span class="card-link muted-link">Confidential, so no code or link</span></footer>
+    </div>
+  </dialog>
+  <dialog class="case" id="case-kasaan" aria-labelledby="case-kasaan-title">
+    <div class="case-in">
+      <header class="case-head">
+        <em class="case-label">Website + store</em>
+        <button class="case-close" type="button" aria-label="Close">×</button>
+      </header>
+      <h2 class="case-title" id="case-kasaan-title">kasaan.fi</h2>
+      <div class="case-art"><img src="assets/kasaan-hero.webp" alt="The kasaan.fi home page with the headline 'Your part, 3D printed in as little as two hours'" width="1200" height="603" loading="lazy" style="object-position: top left"></div>
+      <ol class="case-steps">
+        <li><span class="case-num">01</span><h3>How it started</h3><p class="ph">How did kasaan.fi start? What did Kasaan have before, and what made you build a new site and a store?</p></li>
+        <li><span class="case-num">02</span><h3>Imagine</h3><p class="ph">What did you imagine the site could be? Who should it serve, and how should ordering a print feel?</p></li>
+        <li><span class="case-num">03</span><h3>Structure &amp; build</h3><p>The front end is React with Vite, prerendered to static HTML so search engines and AI tools can read every page, in Finnish, English and Swedish.</p><p>Behind the store is a PHP 8 REST API on MySQL that I built from scratch, grown through 13 database migrations so far. It handles products, orders, PDF invoices and credit notes, customer accounts with Google sign-in, and an admin panel with two-factor login. Playwright tests check the layout on phones, and GitHub Actions deploys every push to a staging site, with production one click away.</p><ul class="tags"><li>React</li><li>Vite</li><li>PHP 8</li><li>MySQL</li><li>REST API</li><li>Playwright</li><li>GitHub Actions</li></ul></li>
+        <li><span class="case-num">04</span><h3>How it came out</h3><p>kasaan.fi is live with quote requests and an online store in three languages. It replaced an earlier React site I built for Kasaan in 2025.</p><p class="ph">Add a result you're proud of, such as orders, quote requests or customer feedback since launch.</p></li>
+      </ol>
+      <footer class="case-foot"><a class="card-link" href="https://kasaan.fi/">Visit kasaan.fi ↗</a></footer>
+    </div>
+  </dialog>
+  <dialog class="case" id="case-pehutec" aria-labelledby="case-pehutec-title">
+    <div class="case-in">
+      <header class="case-head">
+        <em class="case-label">Website</em>
+        <button class="case-close" type="button" aria-label="Close">×</button>
+      </header>
+      <h2 class="case-title" id="case-pehutec-title">PehuTec Oy</h2>
+      <div class="case-art"><img src="assets/pehutec-hero.webp" alt="The PehuTec home page with the headline 'Future Solutions, Implemented by Experts'" width="1200" height="512" loading="lazy" style="object-position: top left"></div>
+      <ol class="case-steps">
+        <li><span class="case-num">01</span><h3>How it started</h3><p class="ph">How did the PehuTec project start? How did you get the job, and what did they need?</p></li>
+        <li><span class="case-num">02</span><h3>Imagine</h3><p class="ph">What did you and PehuTec imagine the site could be? What feeling or message should it give?</p></li>
+        <li><span class="case-num">03</span><h3>Structure &amp; build</h3><p class="ph">Which tools and technologies did you use to build pehutec.com?</p><ul class="tags"><li>Web design</li><li>Front-end</li></ul></li>
+        <li><span class="case-num">04</span><h3>How it came out</h3><p>pehutec.com is live in English and Finnish, presenting PehuTec's services, story, references and open jobs.</p><p class="ph">Add what PehuTec thought of it, or what changed for them after launch.</p></li>
+      </ol>
+      <footer class="case-foot"><a class="card-link" href="https://www.pehutec.com/">Visit pehutec.com ↗</a></footer>
+    </div>
+  </dialog>
+  <dialog class="case" id="case-models" aria-labelledby="case-models-title">
+    <div class="case-in">
+      <header class="case-head">
+        <em class="case-label">3D modelling</em>
+        <button class="case-close" type="button" aria-label="Close">×</button>
+      </header>
+      <h2 class="case-title" id="case-models-title">3D models for printing</h2>
+      
+      <ol class="case-steps">
+        <li><span class="case-num">01</span><h3>How it started</h3><p class="ph">How did you start drawing 3D models? Was it for Kasaan from the beginning?</p></li>
+        <li><span class="case-num">02</span><h3>Imagine</h3><p class="ph">What kind of parts do customers bring as ideas? Describe one request that was fun to solve.</p></li>
+        <li><span class="case-num">03</span><h3>Structure &amp; build</h3><p>I model in Fusion and Blender, and use Meshmixer and MeshInspector to check and repair meshes before they go to the printer.</p><ul class="tags"><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li><li>3D printing</li></ul></li>
+        <li><span class="case-num">04</span><h3>How it came out</h3><p class="ph">Add an example part and how it turned out, or roughly how many models you've drawn.</p></li>
+      </ol>
+      <footer class="case-foot"><a class="card-link" href="https://kasaan.fi/">See Kasaan's printing ↗</a></footer>
+    </div>
+  </dialog>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     (function () {
@@ -271,6 +341,42 @@
         entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
       }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
       els.forEach(function (e) { io.observe(e); });
+    })();
+
+    (function () {
+      var opener = null;
+      function byId(id) { var d = document.getElementById(id); return d && d.tagName === 'DIALOG' ? d : null; }
+      function open(id, push) {
+        var d = byId(id); if (!d) return;
+        if (!d.open) { d.showModal(); document.documentElement.classList.add('case-open'); d.scrollTop = 0; }
+        if (push && location.hash !== '#' + id) history.pushState(null, '', '#' + id);
+      }
+      function closeAll() {
+        document.querySelectorAll('dialog.case[open]').forEach(function (d) { d.close(); });
+      }
+      document.querySelectorAll('dialog.case').forEach(function (d) {
+        d.addEventListener('close', function () {
+          document.documentElement.classList.remove('case-open');
+          if (location.hash === '#' + d.id) history.replaceState(null, '', location.pathname + location.search + '#work');
+          if (opener) { opener.focus({ preventScroll: true }); opener = null; }
+        });
+        d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+        d.querySelector('.case-close').addEventListener('click', function () { d.close(); });
+      });
+      document.querySelectorAll('.card[data-case]').forEach(function (card) {
+        card.addEventListener('click', function (e) {
+          if (e.target.closest('a')) return;
+          opener = card.querySelector('.story-btn');
+          open(card.getAttribute('data-case'), true);
+        });
+      });
+      function sync() {
+        var id = location.hash.slice(1);
+        if (byId(id)) open(id, false); else closeAll();
+      }
+      window.addEventListener('popstate', sync);
+      window.addEventListener('hashchange', sync);
+      sync();
     })();
   </script>
 </body>
