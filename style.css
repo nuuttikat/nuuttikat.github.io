@@ -171,6 +171,11 @@ a { color: inherit; }
 }
 .tagline p { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; line-height: 1.6; }
 .tagline .bar { display: block; width: 32px; height: 3px; background: var(--red); margin-top: 12px; }
+.motto {
+  position: absolute; left: var(--pad); bottom: calc(36 * var(--u) + 66px); z-index: 3; margin: 0;
+  font-family: var(--display); font-weight: 400; text-transform: uppercase; line-height: .95;
+  font-size: calc(40 * var(--u)); color: transparent; -webkit-text-stroke: 1.2px var(--ink); opacity: .5;
+}
 .hero-cta {
   position: absolute; left: var(--pad); bottom: calc(36 * var(--u)); z-index: 3;
   display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
@@ -361,7 +366,8 @@ a { color: inherit; }
   .star { left: calc(1040 * var(--u)); top: 0; }
   .badge { left: auto; right: calc(140 * var(--u)); top: auto; bottom: calc(16 * var(--u)); width: max(calc(132 * var(--u)), 76px); }
   .tagline { position: static; order: 1; padding: 0 var(--pad); }
-  .hero-cta { position: static; order: 3; padding: 22px var(--pad) 28px; background: var(--paper); }
+  .motto { position: static; order: 3; padding: 22px var(--pad) 0; font-size: 34px; }
+  .hero-cta { position: static; order: 4; padding: 22px var(--pad) 28px; background: var(--paper); }
   .about-grid { grid-template-columns: 1fr; }
   .timeline li { grid-template-columns: 1fr auto; gap: 6px 16px; }
   .timeline li .when { grid-column: 1; }
