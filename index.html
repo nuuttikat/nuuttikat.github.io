@@ -1,47 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html lang="fi">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nuutti Katajala · Portfolio</title>
-  <meta name="description" content="Portfolio of Nuutti Katajala, a software developer from Ylivieska, Finland: experience, projects and skills.">
+  <meta name="description" content="Ylivieskalaisen ohjelmistokehittäjän Nuutti Katajalan portfolio: kokemus, projektit ja osaaminen.">
   <meta name="theme-color" content="#111111">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="canonical" href="https://nuuttikat.github.io/">
+  <link rel="alternate" hreflang="fi" href="https://nuuttikat.github.io/">
+  <link rel="alternate" hreflang="en" href="https://nuuttikat.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://nuuttikat.github.io/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23111'/><text x='8' y='25' font-family='Impact,sans-serif' font-size='22' fill='%23efedea'>N</text><text x='21' y='17' font-family='Impact,sans-serif' font-size='16' fill='%23e10600'>*</text></svg>">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <!--
+    Finnish main page. The English version lives in en/index.html: keep the two in sync.
     Content marked with class="ph" is PLACEHOLDER text (dashed underline).
     Replace it with real details and remove the class when done.
     The profile photos in assets/ are stand-ins (Unsplash License, Florian Krumm).
   -->
-  <a class="skip" href="#about">Skip to content</a>
+  <a class="skip" href="#about">Siirry sisältöön</a>
 
   <div class="topbar">
-    <span>Portfolio 2026 · Based in Ylivieska, Finland</span>
-    <span class="avail"><span class="dot" aria-hidden="true"></span>Ready to start tomorrow</span>
+    <span>Portfolio 2026 · Ylivieska, Suomi</span>
+    <span class="avail"><span class="dot" aria-hidden="true"></span>Voin aloittaa vaikka huomenna</span>
   </div>
 
   <header class="site-header">
-    <a class="logo" href="#top" aria-label="Nuutti Katajala, back to top">N<span>*</span></a>
-    <nav aria-label="Main">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
+    <a class="logo" href="#top" aria-label="Nuutti Katajala, takaisin ylös">N<span>*</span></a>
+    <nav aria-label="Päävalikko">
+      <a href="#work">Työt</a>
+      <a href="#about">Minusta</a>
+      <a href="#experience">Kokemus</a>
+      <a href="#skills">Osaaminen</a>
     </nav>
-    <a class="btn btn-red" href="#contact">Let's talk
-      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
-    </a>
+    <div class="head-end">
+      <div class="lang" role="group" aria-label="Kieli">
+        <a href="./" aria-current="page" title="Suomeksi">FI</a>
+        <a href="en/" lang="en" hreflang="en" title="In English">EN</a>
+      </div>
+      <a class="btn btn-red" href="#contact">Jutellaan
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
   </header>
 
   <main id="top">
     <!-- ============ HERO ============ -->
-    <section class="hero" aria-label="Intro">
+    <section class="hero" aria-label="Esittely">
       <div class="stage">
         <div class="red-block" aria-hidden="true"></div>
         <img class="ghost" src="assets/profile-side.webp" alt="" aria-hidden="true" width="520" height="780">
@@ -53,48 +64,48 @@
         </h1>
         <span class="star" aria-hidden="true">*</span>
         <div class="smoke" aria-hidden="true"></div>
-        <img class="front" src="assets/profile-front.webp" alt="Portrait (stand-in stock photo)" width="520" height="780">
+        <img class="front" src="assets/profile-front.webp" alt="Muotokuva (kuvapankin sijaiskuva)" width="520" height="780">
         <div class="badge" aria-hidden="true">
           <svg viewBox="0 0 132 132">
             <defs><path id="circ" d="M66,66 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs>
-            <text><textPath href="#circ" textLength="298" lengthAdjust="spacing">READY • TO START • TOMORROW •</textPath></text>
+            <text><textPath href="#circ" textLength="298" lengthAdjust="spacing">ALOITAN • VAIKKA • HUOMENNA •</textPath></text>
           </svg>
           <span></span>
         </div>
       </div>
 
       <div class="tagline">
-        <p>[Software developer.]<br>[Web, automation &amp; 3D.]<br>[Based in Ylivieska.]</p>
+        <p>[Ohjelmistokehittäjä.]<br>[Web, automaatio &amp; 3D.]<br>[Kotoisin Ylivieskasta.]</p>
         <span class="bar" aria-hidden="true"></span>
       </div>
 
-      <p class="motto">The only limit<br>is your imagination</p>
+      <p class="motto">Vain mielikuvitus<br>on rajana</p>
 
       <div class="hero-cta">
-        <a class="btn btn-dark" href="#work">View my work</a>
-        <a class="link-line ph" href="#contact">Download CV ↓</a>
+        <a class="btn btn-dark" href="#work">Katso työni</a>
+        <a class="link-line ph" href="#contact">Lataa CV ↓</a>
       </div>
     </section>
 
     <div class="stats">
-      <div style="--d:1.5s"><b>5+</b><span>Years as an<br>entrepreneur</span></div>
-      <div style="--d:1.6s"><b>4</b><span>End-to-end<br>software projects</span></div>
-      <div style="--d:1.7s"><b>30+</b><span>Tools &amp;<br>technologies</span></div>
-      <div style="--d:1.8s"><b>A–Z</b><span>Design to deploy,<br>one person</span></div>
+      <div style="--d:1.5s"><b>5+</b><span>Vuotta<br>yrittäjänä</span></div>
+      <div style="--d:1.6s"><b>4</b><span>Ohjelmisto&shy;projektia<br>alusta loppuun</span></div>
+      <div style="--d:1.7s"><b>30+</b><span>Työkalua &amp;<br>teknologiaa</span></div>
+      <div style="--d:1.8s"><b>A–Z</b><span>Ideasta julkaisuun,<br>yksi tekijä</span></div>
     </div>
 
     <!-- ============ ABOUT ============ -->
-    <section id="about" class="sec dark" data-ghost="About">
+    <section id="about" class="sec dark" data-ghost="Minä">
       <div class="smoke-bg" aria-hidden="true"></div>
       <div class="wrap">
-        <div class="sec-head reveal"><span class="sec-num">01</span><h2>About</h2><span class="sec-rule"></span></div>
+        <div class="sec-head reveal"><span class="sec-num">01</span><h2>Minusta</h2><span class="sec-rule"></span></div>
         <div class="about-grid">
-          <p class="statement reveal">Software developer from Ylivieska<span class="red">*</span></p>
+          <p class="statement reveal">Ohjelmisto&shy;kehittäjä Ylivieskasta<span class="red">*</span></p>
           <div class="prose reveal">
-            <p>I'm Nuutti, a software developer from Ylivieska, Finland, and that's where I'm based. I studied information and communications technology on the software developer track at Kaukovainio vocational school in Oulu, from 2024 to 2026.</p>
-            <p>I work mostly on the front end with JavaScript, React, HTML and CSS, and on the back end with Node.js and C#. I also know my way around Linux and Windows servers. At Kasaan Oy, a 3D printing company, I work as software developer, designer, 3D modeller and salesperson. I've been an entrepreneur since 2021, and I also take on client work, such as automation built with Playwright and AI agents.</p>
-            <p>I'm open to work and can start tomorrow, so feel free to get in touch.</p>
-            <p>I got into coding out of curiosity. Phones and computers are such a big part of our lives today that I wanted to know how the world inside them is made. Away from the screen, you'll find me hunting.</p>
+            <p>Olen Nuutti, ohjelmistokehittäjä Ylivieskasta, ja täällä myös asun ja teen töitä. Opiskelin vuosina 2024–2026 tieto- ja viestintätekniikan perustutkintoa ohjelmistokehittäjän osaamisalalla Oulun Kaukovainiolla.</p>
+            <p>Front endissä teen töitä enimmäkseen JavaScriptillä, Reactilla, HTML:llä ja CSS:llä, ja back endissä Node.js:llä ja C#:lla. Myös Linux- ja Windows-palvelimet ovat tuttuja. 3D-tulostukseen keskittyvässä Kasaan Oy:ssä toimin ohjelmistokehittäjänä, suunnittelijana, 3D-mallintajana ja myyjänä. Olen ollut yrittäjä vuodesta 2021, ja teen myös asiakastöitä, kuten Playwrightilla ja tekoälyagenteilla rakennettua automaatiota.</p>
+            <p>Olen avoin uusille töille ja voin aloittaa vaikka huomenna, joten ota rohkeasti yhteyttä.</p>
+            <p>Koodaamisen pariin minut toi uteliaisuus. Puhelimet ja tietokoneet ovat nykyään niin iso osa elämäämme, että halusin tietää, miten niiden sisällä oleva maailma on rakennettu. Ruudun ulkopuolella minut löytää useimmiten metsältä metsästämästä.</p>
           </div>
         </div>
       </div>
@@ -102,37 +113,37 @@
 
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>Imagine</span><i>*</i><span>Structure</span><i>*</i><span>Build</span><i>*</i><span>Imagine</span><i>*</i><span>Structure</span><i>*</i><span>Build</span><i>*</i>
-        <span>Imagine</span><i>*</i><span>Structure</span><i>*</i><span>Build</span><i>*</i><span>Imagine</span><i>*</i><span>Structure</span><i>*</i><span>Build</span><i>*</i>
+        <span>Kuvittele</span><i>*</i><span>Suunnittele</span><i>*</i><span>Rakenna</span><i>*</i><span>Kuvittele</span><i>*</i><span>Suunnittele</span><i>*</i><span>Rakenna</span><i>*</i>
+        <span>Kuvittele</span><i>*</i><span>Suunnittele</span><i>*</i><span>Rakenna</span><i>*</i><span>Kuvittele</span><i>*</i><span>Suunnittele</span><i>*</i><span>Rakenna</span><i>*</i>
       </div>
     </div>
 
     <!-- ============ EXPERIENCE ============ -->
-    <section id="experience" class="sec light" data-ghost="Career">
+    <section id="experience" class="sec light" data-ghost="Ura">
       <div class="wrap">
-        <div class="sec-head reveal"><span class="sec-num">02</span><h2>Experience</h2><span class="sec-rule"></span></div>
+        <div class="sec-head reveal"><span class="sec-num">02</span><h2>Kokemus</h2><span class="sec-rule"></span></div>
         <ol class="timeline">
           <li class="reveal">
-            <span class="when">Nov 2024 – Now</span>
+            <span class="when">11/2024 – nyt</span>
             <div class="what">
-              <h3>Software developer, designer, 3D modeller &amp; salesperson · Kasaan Oy</h3>
-              <p>At Kasaan, a 3D printing and 3D scanning company in Ylivieska, I wear many hats. I develop the software, designed and built the kasaan.fi website, draw the 3D models for print jobs and handle sales.</p><p>Before 3D printing, we did some importing, bringing Yarbo robots from China to Finland and selling them. I handled all contact and meetings with our supplier in China, as the team's strongest English speaker. We are now also trying out consulting: finding factories that can handle big orders for our clients and putting the two in touch.</p>
+              <h3>Ohjelmistokehittäjä, suunnittelija, 3D-mallintaja &amp; myyjä · Kasaan Oy</h3>
+              <p>Ylivieskalaisessa 3D-tulostus- ja 3D-skannausyritys Kasaanissa minulla on monta roolia. Kehitän ohjelmistot, suunnittelin ja rakensin kasaan.fi-sivuston, piirrän tulostustöiden 3D-mallit ja hoidan myyntiä.</p><p>Ennen 3D-tulostusta teimme maahantuontia: toimme Yarbo-robotteja Kiinasta Suomeen ja myimme niitä. Hoidin kaiken yhteydenpidon ja palaverit kiinalaisen toimittajamme kanssa, koska olin tiimimme vahvin englannin puhuja. Nyt kokeilemme myös konsultointia: etsimme asiakkaillemme tehtaita, jotka pystyvät hoitamaan isot tilaukset, ja saatamme heidät yhteen.</p>
             </div>
             <span class="idx" aria-hidden="true">01</span>
           </li>
           <li class="reveal">
-            <span class="when">Mar 2021 – Now</span>
+            <span class="when">3/2021 – nyt</span>
             <div class="what">
-              <h3>Entrepreneur</h3>
-              <p>I've run my own business since March 2021, taking on everything from landscaping to software development and everything in between. It taught me to find work, keep customers happy and get things done.</p>
+              <h3>Yrittäjä</h3>
+              <p>Olen pyörittänyt omaa yritystä maaliskuusta 2021 asti ja tehnyt kaikkea viherrakentamisesta ohjelmistokehitykseen ja kaikkea siltä väliltä. Yrittäjyys on opettanut hankkimaan töitä, pitämään asiakkaat tyytyväisinä ja saamaan asiat valmiiksi.</p>
             </div>
             <span class="idx" aria-hidden="true">02</span>
           </li>
           <li class="reveal">
             <span class="when">2024 – 2026</span>
             <div class="what">
-              <h3>ICT, software developer · Kaukovainio, Oulu</h3>
-              <p>Vocational studies in information and communications technology, software developer track. Coursework covered JavaScript, React, Node.js, C#, HTML and CSS, and Linux and Windows servers.</p>
+              <h3>Tieto- ja viestintätekniikka, ohjelmistokehittäjä · Kaukovainio, Oulu</h3>
+              <p>Tieto- ja viestintätekniikan perustutkinto, ohjelmistokehittäjän osaamisala. Opinnoissa käytiin läpi JavaScript, React, Node.js, C#, HTML ja CSS sekä Linux- ja Windows-palvelimet.</p>
             </div>
             <span class="idx" aria-hidden="true">03</span>
           </li>
@@ -141,50 +152,50 @@
     </section>
 
     <!-- ============ WORK / PROJECTS ============ -->
-    <section id="work" class="sec dark" data-ghost="Work">
+    <section id="work" class="sec dark" data-ghost="Työt">
       <div class="smoke-bg right" aria-hidden="true"></div>
       <div class="wrap">
-        <div class="sec-head reveal"><span class="sec-num">03</span><h2>Selected work</h2><span class="sec-rule"></span></div>
+        <div class="sec-head reveal"><span class="sec-num">03</span><h2>Valitut työt</h2><span class="sec-rule"></span></div>
         <div class="cards">
           <article class="card reveal" data-case="case-automation">
-            <div class="card-art shot"><img src="assets/automation.webp" style="object-position: center" alt="Illustration of AI, automation and data blocks connected in a workflow" width="1200" height="800" loading="lazy"><em>Client work · Confidential</em></div>
-            <h3>Sales &amp; ad automation</h3>
-            <p>Client project: a system that automates sales and advertising work with Playwright and AI agents. It finds businesses that need what the client offers, matches them to the right offer and drafts the outreach email automatically. I went from no AI agent experience to a working demo in one month. The client and project are confidential, so there's no code or link to share.</p>
-            <ul class="tags"><li>Playwright</li><li>AI agents</li><li>Automation</li></ul>
-            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-automation">Read the story →</button><span class="card-link muted-link">Private project</span></div>
+            <div class="card-art shot"><img src="assets/automation.webp" style="object-position: center" alt="Kuvitus tekoälystä, automaatiosta ja datalohkoista, jotka on kytketty yhdeksi työnkuluksi" width="1200" height="800" loading="lazy"><em>Asiakastyö · Luottamuksellinen</em></div>
+            <h3>Myynnin ja mainonnan automaatio</h3>
+            <p>Asiakasprojekti: järjestelmä, joka automatisoi myynti- ja mainostyötä Playwrightin ja tekoälyagenttien avulla. Se etsii yritykset, jotka tarvitsevat asiakkaan tarjoamaa ratkaisua, yhdistää ne oikeaan tarjoukseen ja kirjoittaa yhteydenottoviestin luonnoksen automaattisesti. Lähdin liikkeelle ilman kokemusta tekoälyagenteista ja sain toimivan demon valmiiksi kuukaudessa. Asiakas ja projekti ovat luottamuksellisia, joten koodia tai linkkiä en voi jakaa.</p>
+            <ul class="tags"><li>Playwright</li><li>Tekoälyagentit</li><li>Automaatio</li></ul>
+            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-automation">Lue tarina →</button><span class="card-link muted-link">Yksityinen projekti</span></div>
           </article>
           <article class="card reveal" data-case="case-kasaan">
-            <div class="card-art shot"><img src="assets/kasaan-hero.webp" alt="The kasaan.fi home page: a dark hero with the headline 'Your part, 3D printed in as little as two hours' and an illustration of a part being printed" width="1200" height="603" loading="lazy"><em>Website + store</em></div>
+            <div class="card-art shot"><img src="assets/kasaan-hero.webp" alt="kasaan.fi-sivuston etusivu: tumma yläosa, otsikko 'Your part, 3D printed in as little as two hours' ja kuvitus tulostuvasta osasta" width="1200" height="603" loading="lazy"><em>Verkkosivut + kauppa</em></div>
             <h3>kasaan.fi</h3>
-            <p>Website and online store for Kasaan Oy, a 3D printing and 3D scanning company in Ylivieska, in Finnish, English and Swedish. I built the store's back end myself: a PHP REST API on MySQL with orders, PDF invoices and credit notes, customer accounts with Google sign-in, and an admin panel with two-factor login.</p>
+            <p>Verkkosivut ja verkkokauppa ylivieskalaiselle 3D-tulostus- ja 3D-skannausyritys Kasaan Oy:lle suomeksi, englanniksi ja ruotsiksi. Rakensin kaupan taustajärjestelmän itse: PHP:llä tehty REST-rajapinta MySQL-tietokannan päällä, jossa on tilaukset, PDF-laskut ja hyvityslaskut, asiakastilit Google-kirjautumisella sekä hallintapaneeli kaksivaiheisella tunnistautumisella.</p>
             <ul class="tags"><li>React</li><li>PHP</li><li>MySQL</li><li>Full-stack</li></ul>
-            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-kasaan">Read the story →</button><a class="card-link" href="https://kasaan.fi/">Visit kasaan.fi ↗</a></div>
+            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-kasaan">Lue tarina →</button><a class="card-link" href="https://kasaan.fi/">Avaa kasaan.fi ↗</a></div>
           </article>
           <article class="card reveal" data-case="case-pehutec">
-            <div class="card-art shot"><img src="assets/pehutec-hero.webp" alt="The PehuTec home page: the headline 'Future Solutions, Implemented by Experts' over glowing 3D cubes" width="1200" height="512" loading="lazy"><em>Website</em></div>
+            <div class="card-art shot"><img src="assets/pehutec-hero.webp" alt="PehuTecin etusivu: otsikko 'Future Solutions, Implemented by Experts' hehkuvien 3D-kuutioiden päällä" width="1200" height="512" loading="lazy"><em>Verkkosivut</em></div>
             <h3>PehuTec Oy</h3>
-            <p>Website for PehuTec, an Oulu engineering company that does software and electronics design.</p>
-            <ul class="tags"><li>Web design</li><li>Front-end</li></ul>
-            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-pehutec">Read the story →</button><a class="card-link" href="https://www.pehutec.com/">Visit pehutec.com ↗</a></div>
+            <p>Verkkosivut PehuTecille, oululaiselle insinööritoimistolle, joka suunnittelee ohjelmistoja ja elektroniikkaa.</p>
+            <ul class="tags"><li>Verkkosuunnittelu</li><li>Front-end</li></ul>
+            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-pehutec">Lue tarina →</button><a class="card-link" href="https://www.pehutec.com/">Avaa pehutec.com ↗</a></div>
           </article>
           <article class="card reveal" data-case="case-models">
-            <div class="card-art" aria-hidden="true"><em>3D modelling</em><span>04</span></div>
-            <h3>3D models for printing</h3>
-            <p>I draw the 3D models behind Kasaan's printing business, turning ideas, sketches and customer requests into parts that are ready to print.</p>
-            <ul class="tags"><li>3D modelling</li><li>3D printing</li><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li></ul>
-            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-models">Read the story →</button><a class="card-link" href="https://kasaan.fi/">See Kasaan's printing ↗</a></div>
+            <div class="card-art" aria-hidden="true"><em>3D-mallinnus</em><span>04</span></div>
+            <h3>3D-mallit tulostukseen</h3>
+            <p>Piirrän 3D-mallit Kasaanin tulostusliiketoimintaan ja muutan ideat, luonnokset ja asiakkaiden toiveet tulostusvalmiiksi osiksi.</p>
+            <ul class="tags"><li>3D-mallinnus</li><li>3D-tulostus</li><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li></ul>
+            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-models">Lue tarina →</button><a class="card-link" href="https://kasaan.fi/">Tutustu Kasaanin tulostukseen ↗</a></div>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ============ SKILLS ============ -->
-    <section id="skills" class="sec light" data-ghost="Skills">
+    <section id="skills" class="sec light" data-ghost="Taidot">
       <div class="wrap">
-        <div class="sec-head reveal"><span class="sec-num">04</span><h2>Skills</h2><span class="sec-rule"></span></div>
+        <div class="sec-head reveal"><span class="sec-num">04</span><h2>Osaaminen</h2><span class="sec-rule"></span></div>
         <div class="skills">
           <div class="reveal">
-            <h3>Programming</h3>
+            <h3>Ohjelmointi</h3>
             <ul class="chips"><li>TypeScript</li><li>JavaScript</li><li>PHP</li><li>C#</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
           </div>
           <div class="reveal">
@@ -193,48 +204,48 @@
           </div>
           <div class="reveal">
             <h3>Back-end &amp; data</h3>
-            <ul class="chips"><li>Node.js</li><li>Express</li><li>REST APIs</li><li>MySQL</li><li>PostgreSQL</li><li>SQLite</li><li>JWT auth</li></ul>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>REST APIs</li><li>MySQL</li><li>PostgreSQL</li><li>SQLite</li><li>JWT-tunnistautuminen</li></ul>
           </div>
           <div class="reveal">
-            <h3>AI &amp; automation</h3>
-            <ul class="chips"><li>AI agents</li><li>Claude API</li><li>OpenAI API</li><li>Playwright</li><li>Vitest</li><li>6+ AI coding tools tested</li></ul>
+            <h3>Tekoäly &amp; automaatio</h3>
+            <ul class="chips"><li>Tekoälyagentit</li><li>Claude API</li><li>OpenAI API</li><li>Playwright</li><li>Vitest</li><li>6+ tekoälykoodaustyökalua testattu</li></ul>
           </div>
           <div class="reveal">
-            <h3>Tools &amp; systems</h3>
-            <ul class="chips"><li>Git &amp; GitHub</li><li>GitHub Actions</li><li>Docker</li><li>Azure</li><li>cPanel</li><li>Linux Server</li><li>Windows Server</li><li>3D modelling</li><li>3D printing</li><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li><li>Microsoft Office</li></ul>
+            <h3>Työkalut &amp; järjestelmät</h3>
+            <ul class="chips"><li>Git &amp; GitHub</li><li>GitHub Actions</li><li>Docker</li><li>Azure</li><li>cPanel</li><li>Linux Server</li><li>Windows Server</li><li>3D-mallinnus</li><li>3D-tulostus</li><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li><li>Microsoft Office</li></ul>
           </div>
           <div class="reveal">
-            <h3>Languages</h3>
-            <ul class="chips"><li>Finnish</li><li>English · fluent reading &amp; listening</li><li>English · good spoken</li></ul>
+            <h3>Kielet</h3>
+            <ul class="chips"><li>Suomi</li><li>Englanti · sujuva luetun &amp; kuullun ymmärtäminen</li><li>Englanti · hyvä suullinen taito</li></ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============ WHY ME ============ -->
-    <section id="why" class="sec red-sec" data-ghost="Why me">
+    <section id="why" class="sec red-sec" data-ghost="Miksi minä">
       <div class="wrap">
-        <div class="sec-head reveal"><span class="sec-num">05</span><h2>Why work with me</h2><span class="sec-rule"></span></div>
+        <div class="sec-head reveal"><span class="sec-num">05</span><h2>Miksi minä</h2><span class="sec-rule"></span></div>
         <ol class="why">
           <li class="reveal">
             <span class="why-num">01</span>
-            <h3>Design to deploy</h3>
-            <p>I take a project from the first sketch to a live service: design, front end, back end, database and deployment. One person and no hand-offs, so nothing gets lost between teams.</p>
+            <h3>Ideasta julkaisuun</h3>
+            <p>Vien projektin ensimmäisestä luonnoksesta toimivaksi palveluksi: suunnittelu, front end, back end, tietokanta ja julkaisu. Yksi tekijä eikä välikäsiä, joten mitään ei huku tiimien väliin.</p>
           </li>
           <li class="reveal">
             <span class="why-num">02</span>
-            <h3>An entrepreneur's view</h3>
-            <p>I've run my own business since 2021. I think about customers, sales and cost, not just code, and build things that earn their place.</p>
+            <h3>Yrittäjän näkökulma</h3>
+            <p>Olen pyörittänyt omaa yritystä vuodesta 2021. Mietin asiakkaita, myyntiä ja kustannuksia, en pelkkää koodia, ja rakennan asioita, jotka ansaitsevat paikkansa.</p>
           </li>
           <li class="reveal">
             <span class="why-num">03</span>
-            <h3>Fast learner</h3>
-            <p>I had never built custom AI agents. Within a month I had a working demo where Playwright and AI agents find businesses with a need, match them to what my client offers and draft the outreach email, all automatically. I've also tested 6+ AI coding tools to find the best, and I keep looking for better ones.</p>
+            <h3>Opin nopeasti</h3>
+            <p>En ollut koskaan rakentanut omia tekoälyagentteja. Kuukaudessa minulla oli toimiva demo, jossa Playwright ja tekoälyagentit etsivät yritykset, joilla on tarve, yhdistävät ne asiakkaani tarjontaan ja kirjoittavat yhteydenottoviestin luonnoksen, kaikki automaattisesti. Olen myös testannut yli kuutta tekoälykoodaustyökalua löytääkseni parhaan, ja etsin jatkuvasti parempia.</p>
           </li>
           <li class="reveal">
             <span class="why-num">04</span>
-            <h3>Screen to print</h3>
-            <p>Besides software, I draw 3D models and work with 3D printing and scanning, so I can help with physical products too.</p>
+            <h3>Ruudulta tulosteeksi</h3>
+            <p>Ohjelmistojen lisäksi piirrän 3D-malleja ja teen 3D-tulostusta ja -skannausta, joten voin auttaa myös fyysisten tuotteiden kanssa.</p>
           </li>
         </ol>
       </div>
@@ -244,13 +255,13 @@
     <section id="contact" class="sec dark contact">
       <div class="smoke-bg" aria-hidden="true"></div>
       <div class="wrap">
-        <div class="sec-head reveal"><span class="sec-num">05</span><h2>Contact</h2><span class="sec-rule"></span></div>
-        <p class="big-cta reveal">Let's talk<span class="star-sm" aria-hidden="true">*</span></p>
-        <p class="lead reveal">Want to work together or just say hi? Reach out.</p>
+        <div class="sec-head reveal"><span class="sec-num">06</span><h2>Yhteystiedot</h2><span class="sec-rule"></span></div>
+        <p class="big-cta reveal">Jutellaan<span class="star-sm" aria-hidden="true">*</span></p>
+        <p class="lead reveal">Haluatko tehdä yhteistyötä tai vain moikata? Ota yhteyttä.</p>
         <ul class="contact-list">
-          <li class="reveal"><span>Email</span><a href="mailto:nuutti.katajala@gmail.com">nuutti.katajala@gmail.com</a></li>
+          <li class="reveal"><span>Sähköposti</span><a href="mailto:nuutti.katajala@gmail.com">nuutti.katajala@gmail.com</a></li>
           <li class="reveal"><span>GitHub</span><a href="https://github.com/nuuttikat">github.com/nuuttikat</a></li>
-          <li class="reveal"><span>LinkedIn</span><a href="https://www.linkedin.com/in/nuutti-katajala-6817a5335/">Nuutti on LinkedIn ↗</a></li>
+          <li class="reveal"><span>LinkedIn</span><a href="https://www.linkedin.com/in/nuutti-katajala-6817a5335/">Nuutti LinkedInissä ↗</a></li>
         </ul>
       </div>
     </section>
@@ -258,77 +269,77 @@
 
   <footer class="site-footer">
     <p>© <span id="year">2026</span> Nuutti Katajala<span class="red">*</span></p>
-    <p class="muted">Dashed underline = placeholder. Stand-in photos by <a href="https://unsplash.com/@floriankrumm">Florian Krumm</a> on Unsplash.</p>
-    <a href="#top">Back to top ↑</a>
+    <p class="muted">Katkoviiva = paikkamerkki. Sijaiskuvat: <a href="https://unsplash.com/@floriankrumm">Florian Krumm</a> / Unsplash.</p>
+    <a href="#top">Takaisin ylös ↑</a>
   </footer>
 
 
   <dialog class="case" id="case-automation" aria-labelledby="case-automation-title">
     <div class="case-in">
       <header class="case-head">
-        <em class="case-label">Client work · Confidential</em>
-        <button class="case-close" type="button" aria-label="Close">×</button>
+        <em class="case-label">Asiakastyö · Luottamuksellinen</em>
+        <button class="case-close" type="button" aria-label="Sulje">×</button>
       </header>
-      <h2 class="case-title" id="case-automation-title">Sales &amp; ad automation</h2>
-      <div class="case-art"><img src="assets/automation.webp" alt="Illustration of AI, automation and data blocks connected in a workflow" width="1200" height="800" loading="lazy" style="object-position: center"></div>
+      <h2 class="case-title" id="case-automation-title">Myynnin ja mainonnan automaatio</h2>
+      <div class="case-art"><img src="assets/automation.webp" alt="Kuvitus tekoälystä, automaatiosta ja datalohkoista, jotka on kytketty yhdeksi työnkuluksi" width="1200" height="800" loading="lazy" style="object-position: center"></div>
       <ol class="case-steps">
-        <li><span class="case-num">01</span><h3>How it started</h3><p>I was looking for a project to complete my studies when I met a business owner with a real problem. Most of his week went into going through cold-call lists, hunting for the customers who actually needed one specific product he sells.</p></li>
-        <li><span class="case-num">02</span><h3>Imagine</h3><p>He pictured AI agents doing that search for him, and brought me in to build it. Our first version ran fully on AI agents, just as planned, but we soon saw how much it would cost to run. So we changed course: Playwright now does the heavy lifting of browsing and collecting data cheaply, and the AI agents only step in where judgement and writing are needed.</p></li>
-        <li><span class="case-num">03</span><h3>Structure &amp; build</h3><p>The system is written in TypeScript on Node.js, with Express serving a small web interface and API. Playwright drives a real browser to gather information from the web. A team of AI agents on the Claude and OpenAI APIs splits the work: one researches each business, one judges whether it needs what the client offers, and one writes the outreach email.</p><p>Jobs run in the background, data is stored in PostgreSQL (SQLite while developing), tests run on Vitest, and the whole thing ships as a Docker container.</p><ul class="tags"><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Playwright</li><li>Claude API</li><li>OpenAI API</li><li>PostgreSQL</li><li>Docker</li></ul></li>
-        <li><span class="case-num">04</span><h3>How it came out</h3><p>I had never built custom AI agents before. Within a month there was a working demo: it finds businesses with a real need, matches them to the right offer and has the email draft ready, all automatically.</p><p>Switching to Playwright plus AI agents brought the running costs down to almost nothing. It frees up his week to grow revenue, and it finds far more matching customers than the cold-call lists did.</p></li>
+        <li><span class="case-num">01</span><h3>Miten kaikki alkoi</h3><p>Etsin projektia, jolla saisin opintoni päätökseen, kun tapasin yrittäjän, jolla oli todellinen ongelma. Suurin osa hänen viikostaan kului kylmäsoittolistojen läpikäymiseen, kun hän etsi asiakkaita, jotka oikeasti tarvitsivat yhtä hänen myymäänsä tuotetta.</p></li>
+        <li><span class="case-num">02</span><h3>Kuvittele</h3><p>Hän kuvitteli tekoälyagentit tekemään haun hänen puolestaan ja pyysi minut rakentamaan sen. Ensimmäinen versio toimi suunnitelman mukaan kokonaan tekoälyagenttien varassa, mutta huomasimme pian, kuinka paljon sen pyörittäminen maksaisi. Niinpä muutimme suuntaa: nyt Playwright hoitaa raskaan työn eli selaamisen ja tiedonkeruun edullisesti, ja tekoälyagentit tulevat mukaan vain siellä, missä tarvitaan harkintaa ja kirjoittamista.</p></li>
+        <li><span class="case-num">03</span><h3>Suunnittele &amp; rakenna</h3><p>Järjestelmä on kirjoitettu TypeScriptillä Node.js:n päälle, ja Express tarjoaa pienen web-käyttöliittymän ja rajapinnan. Playwright ohjaa oikeaa selainta ja kerää tietoa verkosta. Claude- ja OpenAI-rajapintoja käyttävä tekoälyagenttien tiimi jakaa työn: yksi tutkii kunkin yrityksen, toinen arvioi, tarvitseeko yritys asiakkaan tarjontaa, ja kolmas kirjoittaa yhteydenottoviestin.</p><p>Työt pyörivät taustalla, data tallennetaan PostgreSQL:ään (kehityksen aikana SQLiteen), testit ajetaan Vitestillä ja koko järjestelmä toimitetaan Docker-konttina.</p><ul class="tags"><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Playwright</li><li>Claude API</li><li>OpenAI API</li><li>PostgreSQL</li><li>Docker</li></ul></li>
+        <li><span class="case-num">04</span><h3>Lopputulos</h3><p>En ollut koskaan aiemmin rakentanut omia tekoälyagentteja. Kuukaudessa valmiina oli toimiva demo: se löytää yritykset, joilla on todellinen tarve, yhdistää ne oikeaan tarjoukseen ja valmistelee sähköpostiluonnoksen, kaikki automaattisesti.</p><p>Playwrightin ja tekoälyagenttien yhdistelmä laski käyttökustannukset lähes nollaan. Yrittäjän viikko vapautuu myynnin kasvattamiseen, ja järjestelmä löytää paljon enemmän sopivia asiakkaita kuin kylmäsoittolistat.</p></li>
       </ol>
-      <footer class="case-foot"><span class="card-link muted-link">Confidential, so no code or link</span></footer>
+      <footer class="case-foot"><span class="card-link muted-link">Luottamuksellinen, joten ei koodia eikä linkkiä</span></footer>
     </div>
   </dialog>
   <dialog class="case" id="case-kasaan" aria-labelledby="case-kasaan-title">
     <div class="case-in">
       <header class="case-head">
-        <em class="case-label">Website + store</em>
-        <button class="case-close" type="button" aria-label="Close">×</button>
+        <em class="case-label">Verkkosivut + kauppa</em>
+        <button class="case-close" type="button" aria-label="Sulje">×</button>
       </header>
       <h2 class="case-title" id="case-kasaan-title">kasaan.fi</h2>
-      <div class="case-art"><img src="assets/kasaan-hero.webp" alt="The kasaan.fi home page with the headline 'Your part, 3D printed in as little as two hours'" width="1200" height="603" loading="lazy" style="object-position: top left"></div>
+      <div class="case-art"><img src="assets/kasaan-hero.webp" alt="kasaan.fi-sivuston etusivu, otsikkona 'Your part, 3D printed in as little as two hours'" width="1200" height="603" loading="lazy" style="object-position: top left"></div>
       <ol class="case-steps">
-        <li><span class="case-num">01</span><h3>How it started</h3><p>When Kasaan started 3D printing, we needed a landing page to tell people about it, so I made one.</p></li>
-        <li><span class="case-num">02</span><h3>Imagine</h3><p>We quickly realised we needed more than a landing page. Along the way we had made a lot of useful prints, and a web store would let people buy them. So I decided to make it happen.</p></li>
-        <li><span class="case-num">03</span><h3>Structure &amp; build</h3><p>The front end is React with Vite, prerendered to static HTML so search engines and AI tools can read every page, in Finnish, English and Swedish.</p><p>Behind the store is a PHP 8 REST API on MySQL that I built from scratch, grown through 13 database migrations so far. It handles products, orders, PDF invoices and credit notes, customer accounts with Google sign-in, and an admin panel with two-factor login. Playwright tests check the layout on phones, and GitHub Actions deploys every push to a staging site, with production one click away.</p><ul class="tags"><li>React</li><li>Vite</li><li>PHP 8</li><li>MySQL</li><li>REST API</li><li>Playwright</li><li>GitHub Actions</li></ul></li>
-        <li><span class="case-num">04</span><h3>How it came out</h3><p>kasaan.fi is live with quote requests and an online store in three languages. It replaced an earlier React site I built for Kasaan in 2025.</p><p class="ph">Add a result you're proud of, such as orders, quote requests or customer feedback since launch.</p></li>
+        <li><span class="case-num">01</span><h3>Miten kaikki alkoi</h3><p>Kun Kasaan aloitti 3D-tulostuksen, tarvitsimme esittelysivun, joka kertoisi siitä ihmisille, joten tein sellaisen.</p></li>
+        <li><span class="case-num">02</span><h3>Kuvittele</h3><p>Huomasimme nopeasti, että pelkkä esittelysivu ei riitä. Matkan varrella olimme tulostaneet paljon hyödyllisiä tuotteita, ja verkkokaupan kautta ihmiset voisivat ostaa niitä. Päätin siis toteuttaa sen.</p></li>
+        <li><span class="case-num">03</span><h3>Suunnittele &amp; rakenna</h3><p>Front end on tehty Reactilla ja Vitellä, ja se esirenderöidään staattiseksi HTML:ksi, jotta hakukoneet ja tekoälytyökalut pystyvät lukemaan jokaisen sivun suomeksi, englanniksi ja ruotsiksi.</p><p>Kaupan takana on PHP 8 -pohjainen REST-rajapinta MySQL-tietokannan päällä. Rakensin sen alusta asti itse, ja tietokanta on kehittynyt tähän mennessä 13 migraation verran. Rajapinta hoitaa tuotteet, tilaukset, PDF-laskut ja hyvityslaskut, asiakastilit Google-kirjautumisella sekä hallintapaneelin kaksivaiheisella tunnistautumisella. Playwright-testit tarkistavat ulkoasun puhelimilla, ja GitHub Actions julkaisee jokaisen muutoksen testiympäristöön, josta tuotantoon pääsee yhdellä klikkauksella.</p><ul class="tags"><li>React</li><li>Vite</li><li>PHP 8</li><li>MySQL</li><li>REST API</li><li>Playwright</li><li>GitHub Actions</li></ul></li>
+        <li><span class="case-num">04</span><h3>Lopputulos</h3><p>kasaan.fi on julkaistu, ja siinä on tarjouspyynnöt ja verkkokauppa kolmella kielellä. Se korvasi aiemman React-sivuston, jonka tein Kasaanille vuonna 2025.</p><p class="ph">Lisää tulos, josta olet ylpeä, kuten tilaukset, tarjouspyynnöt tai asiakaspalaute julkaisun jälkeen.</p></li>
       </ol>
-      <footer class="case-foot"><a class="card-link" href="https://kasaan.fi/">Visit kasaan.fi ↗</a></footer>
+      <footer class="case-foot"><a class="card-link" href="https://kasaan.fi/">Avaa kasaan.fi ↗</a></footer>
     </div>
   </dialog>
   <dialog class="case" id="case-pehutec" aria-labelledby="case-pehutec-title">
     <div class="case-in">
       <header class="case-head">
-        <em class="case-label">Website</em>
-        <button class="case-close" type="button" aria-label="Close">×</button>
+        <em class="case-label">Verkkosivut</em>
+        <button class="case-close" type="button" aria-label="Sulje">×</button>
       </header>
       <h2 class="case-title" id="case-pehutec-title">PehuTec Oy</h2>
-      <div class="case-art"><img src="assets/pehutec-hero.webp" alt="The PehuTec home page with the headline 'Future Solutions, Implemented by Experts'" width="1200" height="512" loading="lazy" style="object-position: top left"></div>
+      <div class="case-art"><img src="assets/pehutec-hero.webp" alt="PehuTecin etusivu, otsikkona 'Future Solutions, Implemented by Experts'" width="1200" height="512" loading="lazy" style="object-position: top left"></div>
       <ol class="case-steps">
-        <li><span class="case-num">01</span><h3>How it started</h3><p>I joined PehuTec as a freelancer to build them a new website. The old one was a mess: it was out of date, and people struggled to find what they were looking for.</p></li>
-        <li><span class="case-num">02</span><h3>Imagine</h3><p>The goal was a site where everything is one click away and everyone can actually find what they need. We started with a kickoff meeting where PehuTec worked out everything they wanted. Plans changed every fifteen minutes, so I took notes through the whole session and turned them into a page map.</p></li>
-        <li><span class="case-num">03</span><h3>Structure &amp; build</h3><p>I built the site on WordPress, with custom blocks so each part of the page map has its own layout and stays easy to update.</p><ul class="tags"><li>WordPress</li><li>Custom blocks</li><li>Web design</li></ul></li>
-        <li><span class="case-num">04</span><h3>How it came out</h3><p>pehutec.com is live in English and Finnish, presenting PehuTec's services, story, references and open jobs.</p><p>Even though the first meeting was chaotic, everything we planned was already in the first demo, with nothing missing. The person in charge at PehuTec was amazed by the quality of the finished site and by how little it took to get from a sketched page map to a real website.</p></li>
+        <li><span class="case-num">01</span><h3>Miten kaikki alkoi</h3><p>Tulin PehuTecille freelancerina rakentamaan heille uudet verkkosivut. Vanhat sivut olivat sekavat: ne olivat vanhentuneet, eikä ihmisten ollut helppo löytää etsimäänsä.</p></li>
+        <li><span class="case-num">02</span><h3>Kuvittele</h3><p>Tavoitteena olivat sivut, joilla kaikki on yhden klikkauksen päässä ja jokainen oikeasti löytää tarvitsemansa. Aloitimme aloituspalaverilla, jossa PehuTec kävi läpi kaiken, mitä he halusivat. Suunnitelmat muuttuivat vartin välein, joten kirjoitin muistiinpanoja koko palaverin ajan ja tein niistä sivukartan.</p></li>
+        <li><span class="case-num">03</span><h3>Suunnittele &amp; rakenna</h3><p>Rakensin sivuston WordPressillä. Omien lohkojen ansiosta jokaisella sivukartan osalla on oma asettelunsa, ja sisältöä on helppo päivittää.</p><ul class="tags"><li>WordPress</li><li>Omat lohkot</li><li>Verkkosuunnittelu</li></ul></li>
+        <li><span class="case-num">04</span><h3>Lopputulos</h3><p>pehutec.com on julkaistu englanniksi ja suomeksi, ja se esittelee PehuTecin palvelut, tarinan, referenssit ja avoimet työpaikat.</p><p>Vaikka ensimmäinen palaveri oli kaoottinen, kaikki suunnittelemamme oli mukana jo ensimmäisessä demossa, eikä mitään puuttunut. PehuTecin vastuuhenkilö oli vaikuttunut valmiin sivuston laadusta ja siitä, kuinka vähällä luonnostellusta sivukartasta päästiin oikeaksi verkkosivustoksi.</p></li>
       </ol>
-      <footer class="case-foot"><a class="card-link" href="https://www.pehutec.com/">Visit pehutec.com ↗</a></footer>
+      <footer class="case-foot"><a class="card-link" href="https://www.pehutec.com/">Avaa pehutec.com ↗</a></footer>
     </div>
   </dialog>
   <dialog class="case" id="case-models" aria-labelledby="case-models-title">
     <div class="case-in">
       <header class="case-head">
-        <em class="case-label">3D modelling</em>
-        <button class="case-close" type="button" aria-label="Close">×</button>
+        <em class="case-label">3D-mallinnus</em>
+        <button class="case-close" type="button" aria-label="Sulje">×</button>
       </header>
-      <h2 class="case-title" id="case-models-title">3D models for printing</h2>
+      <h2 class="case-title" id="case-models-title">3D-mallit tulostukseen</h2>
       
       <ol class="case-steps">
-        <li><span class="case-num">01</span><h3>How it started</h3><p>I started modelling when Kasaan got its 3D printer and we began making sample custom products.</p></li>
-        <li><span class="case-num">02</span><h3>Imagine</h3><p>I taught myself, and had a lot of fun doing it. I have drawn everything from a cup to a gun stock, and I also make small changes to scanned objects so they print just right.</p></li>
-        <li><span class="case-num">03</span><h3>Structure &amp; build</h3><p>I model in Fusion and Blender, and use Meshmixer and MeshInspector to check and repair meshes before they go to the printer.</p><ul class="tags"><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li><li>3D printing</li></ul></li>
-        <li><span class="case-num">04</span><h3>How it came out</h3><p>I am still at the start of my modelling journey, with roughly 80 to 100 hours of modelling behind me so far.</p></li>
+        <li><span class="case-num">01</span><h3>Miten kaikki alkoi</h3><p>Aloitin mallintamisen, kun Kasaan hankki 3D-tulostimen ja aloimme tehdä näytekappaleita räätälöidyistä tuotteista.</p></li>
+        <li><span class="case-num">02</span><h3>Kuvittele</h3><p>Opettelin kaiken itse, ja se oli todella hauskaa. Olen piirtänyt kaikkea kupista aseen tukkiin, ja teen myös pieniä muutoksia skannattuihin kappaleisiin, jotta ne tulostuvat juuri oikein.</p></li>
+        <li><span class="case-num">03</span><h3>Suunnittele &amp; rakenna</h3><p>Mallinnan Fusionilla ja Blenderillä. Meshmixerillä ja MeshInspectorilla tarkistan ja korjaan mallien verkot ennen kuin ne lähtevät tulostimelle.</p><ul class="tags"><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li><li>3D-tulostus</li></ul></li>
+        <li><span class="case-num">04</span><h3>Lopputulos</h3><p>Mallinnusmatkani on vasta alussa: takana on tähän mennessä noin 80–100 tuntia mallintamista.</p></li>
       </ol>
-      <footer class="case-foot"><a class="card-link" href="https://kasaan.fi/">See Kasaan's printing ↗</a></footer>
+      <footer class="case-foot"><a class="card-link" href="https://kasaan.fi/">Tutustu Kasaanin tulostukseen ↗</a></footer>
     </div>
   </dialog>
 

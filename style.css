@@ -463,3 +463,13 @@ dialog.case[open] { animation: case-in .45s var(--ease) both; }
   .case-steps > li > .case-num { grid-row: auto; grid-column: 1; font-size: 30px; margin-bottom: 6px; }
 }
 @media (prefers-reduced-motion: reduce) { dialog.case[open] { animation: none; } }
+
+/* ---------- Language switch (FI / EN) ---------- */
+.head-end { display: flex; align-items: center; gap: 18px; }
+.lang { display: flex; align-items: center; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+.lang a { padding: 6px 7px; text-decoration: none; opacity: .45; transition: opacity .2s, color .2s; }
+.lang a + a { border-left: 1.5px solid currentColor; }
+.lang a[aria-current] { opacity: 1; color: var(--red); }
+.lang a:hover { opacity: 1; }
+@media (max-width: 680px) { .head-end { gap: 10px; } .lang a { padding: 6px 6px; } }
+.stats b { white-space: nowrap; }
