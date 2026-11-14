@@ -291,6 +291,11 @@ a { color: inherit; }
   position: relative; font-family: var(--display); font-size: clamp(90px, 10vw, 150px); line-height: .85;
   color: transparent; -webkit-text-stroke: 1.5px var(--paper); opacity: .8;
 }
+.card-art.shot { padding: 0; }
+.card-art.shot::before { display: none; }
+.card-art.shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top left; transition: transform .8s var(--ease); }
+.card:hover .card-art.shot img { transform: scale(1.04); }
+.card-art.shot em { top: auto; left: auto; right: 14px; bottom: 14px; }
 .card-art em {
   position: absolute; left: 14px; top: 14px; z-index: 1;
   font-style: normal; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
