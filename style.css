@@ -473,15 +473,3 @@ dialog.case[open] { animation: case-in .45s var(--ease) both; }
 .lang a:hover { opacity: 1; }
 @media (max-width: 680px) { .head-end { gap: 10px; } .lang a { padding: 6px 6px; } }
 .stats b { white-space: nowrap; }
-
-/* Work-in-progress notice: photos are stand-ins until Nuutti's own arrive */
-.wip-note {
-  background: var(--red); color: #fff; text-align: center;
-  font: 500 13px/1.4 var(--body); padding: 8px var(--pad);
-}
-.wip-note b { font-weight: 700; }
-.photo-tag {
-  position: absolute; z-index: 6; left: calc(512 * var(--u)); bottom: calc(14 * var(--u));
-  background: var(--black); color: #fff; font: 600 max(9px, calc(12 * var(--u))) / 1.2 var(--body);
-  letter-spacing: .08em; text-transform: uppercase; padding: .5em .8em;
-}
