@@ -474,3 +474,7 @@ dialog.case[open] { animation: case-in .45s var(--ease) both; }
 .lang a:hover { opacity: 1; }
 @media (max-width: 680px) { .head-end { gap: 10px; } .lang a { padding: 6px 6px; } }
 .stats b { white-space: nowrap; }
+
+/* Note under the work cards: most code is private, link to public samples */
+.work-note { max-width: 62ch; margin: 28px 0 0; color: var(--grey); }
+.work-note .card-link { white-space: nowrap; }
