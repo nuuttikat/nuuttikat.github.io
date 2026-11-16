@@ -185,20 +185,6 @@
             <ul class="tags"><li>3D modelling</li><li>3D printing</li><li>Fusion</li><li>Blender</li><li>Meshmixer</li><li>MeshInspector</li></ul>
             <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-models">Read the story →</button><span class="card-link muted-link">Gallery coming soon</span></div>
           </article>
-          <article class="card reveal" data-case="case-lihaa">
-            <div class="card-art" aria-hidden="true"><em>Own product · Platform</em><span>05</span></div>
-            <h3>Lihaa.fi</h3>
-            <p>An online service where hunting clubs sell game meat directly to buyers. Buyers find the nearest clubs by postcode, and each club has its own web shop where meat is reserved online and picked up from the club. I built the whole service myself: club sign-up, the shops, invoicing and the admin view for Kasaan Oy.</p>
-            <ul class="tags"><li>PHP</li><li>SQLite</li><li>Payments</li><li>Full-stack</li></ul>
-            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-lihaa">Read the story →</button><span class="card-link muted-link">Private project</span></div>
-          </article>
-          <article class="card reveal" data-case="case-yarbo">
-            <div class="card-art" aria-hidden="true"><em>Web shop · Kasaan Oy</em><span>06</span></div>
-            <h3>Yarbo webstore</h3>
-            <p>A web shop for Kasaan Oy's import of Yarbo robots, the business before 3D printing. The robot is built from swappable modules, so the shop let customers explore modules, choose ready-made packages and request a quote. I built both the interface and the back end.</p>
-            <ul class="tags"><li>React</li><li>Node.js</li><li>Express</li><li>MySQL</li></ul>
-            <div class="card-actions"><button class="card-link story-btn" type="button" data-case="case-yarbo">Read the story →</button><span class="card-link muted-link">Shop closed</span></div>
-          </article>
         </div>
         <p class="work-note reveal">Most of my code lives in private repositories because it is production code for businesses. So I put together public code samples that show how I code. <a class="card-link" href="https://github.com/nuuttikat/code-samples">Code samples on GitHub ↗</a></p>
       </div>
@@ -361,41 +347,6 @@
     </div>
   </dialog>
 
-  <dialog class="case" id="case-lihaa" aria-labelledby="case-lihaa-title">
-    <div class="case-in">
-      <header class="case-head">
-        <em class="case-label">Own product · Platform</em>
-        <button class="case-close" type="button" aria-label="Close">×</button>
-      </header>
-      <h2 class="case-title" id="case-lihaa-title">Lihaa.fi</h2>
-      <ol class="case-steps">
-        <li><span class="case-num">01</span><h3>Purpose, intent &amp; goal</h3><p><strong>Purpose.</strong> Make it easier for hunting clubs to sell game meat legally and directly to consumers.</p><p><strong>Intent.</strong> Turn a web shop built for one club into a service any club can join on its own.</p><p><strong>Goal.</strong> A multi-club platform that handles sales, invoicing and admin automatically and meets food safety and invoicing requirements.</p></li>
-        <li><span class="case-num">02</span><h3>Starting point</h3><p>I first built a web shop for one hunting club. Once it worked, we saw that many other clubs needed the same thing.</p></li>
-        <li><span class="case-num">03</span><h3>Imagine</h3><p>Instead of separate shops, I designed one shared service: buyers search for nearby clubs from a single front page, and each club gets its own shop at its own address. Clubs sign up themselves, and Kasaan Oy approves each one before its shop opens.</p></li>
-        <li><span class="case-num">04</span><h3>Structure &amp; build</h3><p>The service is built with PHP 8 and SQLite databases, so it runs on ordinary web hosting without a separate database server. Each club has separate logins for the main user and the seller. Invoices are created automatically with a reference number and virtual barcode, renewal invoices and reminders go out on a schedule, and online payments through Paytrail are ready to switch on.</p><p>The admin view exports payments as CSV for bookkeeping and sales by game species for food safety records. Encrypted backups run daily, and a club's data is deleted as agreed when its contract ends. The service works in Finnish, English and Swedish.</p></li>
-        <li><span class="case-num">05</span><h3>Outcome</h3><p>A finished multi-club service where clubs can sell without a web shop of their own, and admin stays light for Kasaan Oy. The project taught me the most about building invoicing, data protection and legal requirements into a product from the start.</p></li>
-      </ol>
-      <footer class="case-foot"><span class="card-link muted-link">Private project</span></footer>
-    </div>
-  </dialog>
-
-  <dialog class="case" id="case-yarbo" aria-labelledby="case-yarbo-title">
-    <div class="case-in">
-      <header class="case-head">
-        <em class="case-label">Web shop · Kasaan Oy</em>
-        <button class="case-close" type="button" aria-label="Close">×</button>
-      </header>
-      <h2 class="case-title" id="case-yarbo-title">Yarbo webstore</h2>
-      <ol class="case-steps">
-        <li><span class="case-num">01</span><h3>Purpose, intent &amp; goal</h3><p><strong>Purpose.</strong> Bring Yarbo robots within reach of Finnish customers online.</p><p><strong>Intent.</strong> Present a modular product so customers understand what they need.</p><p><strong>Goal.</strong> A web shop with products, modules, packages, a cart, customer accounts and an admin panel.</p></li>
-        <li><span class="case-num">02</span><h3>Starting point</h3><p>Before 3D printing, Kasaan Oy imported Yarbo robots from China and sold them in Finland. Sales needed a web shop.</p></li>
-        <li><span class="case-num">03</span><h3>Imagine</h3><p>Yarbo is one base unit that takes different modules for different jobs. I wanted customers to explore each module on its own and pick a ready-made package for their needs.</p></li>
-        <li><span class="case-num">04</span><h3>Structure &amp; build</h3><p>I started with a front-end prototype in React and Vite, then built the back end: a Node.js and Express API on a MySQL database. Customer accounts use JWT tokens and bcrypt-hashed passwords, and the admin panel has roles for administrators.</p></li>
-        <li><span class="case-num">05</span><h3>Outcome</h3><p>The shop was live and served customers until Kasaan Oy ended the import business to focus on 3D printing, and the shop was taken down. It was my first full-stack web shop, and what I learned went straight into building the kasaan.fi shop.</p></li>
-      </ol>
-      <footer class="case-foot"><span class="card-link muted-link">Shop closed</span></footer>
-    </div>
-  </dialog>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
