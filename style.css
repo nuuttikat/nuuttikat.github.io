@@ -454,6 +454,7 @@ dialog.case[open] { animation: case-in .45s var(--ease) both; }
 .case-steps > li > .case-num { grid-column: 1; grid-row: 1 / span 9; font-family: var(--display); font-size: 44px; line-height: 1; color: transparent; -webkit-text-stroke: 1.2px var(--paper); opacity: .7; }
 .case-steps h3 { margin: 0 0 10px; font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: 28px; line-height: 1; color: var(--red); }
 .case-steps p { margin: 0 0 12px; color: #c9c6c2; line-height: 1.65; }
+.case-steps p strong { color: var(--paper); font-weight: 600; }
 .case-steps .tags { margin-top: 6px; }
 .case-foot { padding-top: 22px; }
 @media (max-width: 680px) {
