@@ -272,6 +272,15 @@ a { color: inherit; }
 .what p { margin: 0; max-width: 60ch; opacity: .78; }
 .idx { font-family: var(--display); font-size: 22px; opacity: .35; }
 
+/* References */
+.refs { margin-top: 56px; }
+.refs-title { margin: 0 0 18px; font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(24px, 2.6vw, 32px); line-height: 1; }
+.refs-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.refs-list li { border: 2px solid var(--ink); border-left: 8px solid var(--red); padding: 18px 20px; background: #fff; }
+.refs-list h4 { margin: 0 0 6px; font-size: 18px; font-weight: 700; }
+.refs-list p { margin: 0; opacity: .78; font-size: 15px; line-height: 1.45; }
+.refs-note { margin: 14px 0 0; font-size: 14px; color: var(--grey); font-style: italic; }
+
 /* ---------- Work / projects ---------- */
 .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 32px); }
 .card { display: flex; flex-direction: column; gap: 14px; }
